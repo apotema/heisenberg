@@ -7,7 +7,9 @@ require "chewbacca/api_integration_spec"
 module Chewbacca
   if defined? RSpec
     RSpec.configure do |config|
-      config.include ApiIntegrationSpec, type: :api_integration
+      config.include ApiIntegrationSpec,
+        example_group: { file_path: /spec\/rest_apis/ },
+        type: :rest_api
     end
 
     RSpec::Matchers.define :be_status_for do |expected|

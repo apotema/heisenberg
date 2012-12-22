@@ -6,6 +6,8 @@ module Chewbacca
       include Rack::Test::Methods
       include Rails.application.routes.url_helpers
 
+      metadata[:type] = :rest_api
+
       Rails.application.routes.default_url_options[:host] = Rack::Test::DEFAULT_HOST
 
       def app

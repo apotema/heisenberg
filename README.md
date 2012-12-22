@@ -17,17 +17,17 @@ and then run the bundle command:
 Usage
 -----
 
-First of all, we must set our spec to use chewbacca by setting the spec type to api_integration.
+First of all, we must set our spec to use chewbacca by setting the spec type to rest_api.
 
 ```ruby
 require "spec_helper"
 
-describe "My awesome REST API", type: :api_integration
-  it "should do something awesome" 
+describe "My awesome REST API", type: :rest_api
+  it "should do something awesome"
 end
 ```
- 
-By default, all specs under the api_integration directory will use chewbacca, allowing you to ommit the type declaration.
+
+By default, all specs under the rest_apis directory will use chewbacca, allowing you to ommit the type declaration.
 
 To send messages to your api you can call any of these methods:
 
