@@ -38,11 +38,29 @@ delete "/people/1"
 put "/people/1", person: { name: "Jet Li" }
 ```
 
-To get the response from the requests can call the response method, which will return the response body parsed to a HashWithIndifferentAccess. For example:
+To get the response body from the last request can call the response_body method, which will return the response body parsed to a HashWithIndifferentAccess. For example:
 
 ```ruby
 get "/people/1"
-expect(response).to be_eql {person: {name: "Jet Li" }}
+expect(response_body).to be_eql {person: {name: "Jet Li" }}
+```
+
+You can get the response status code from the last request and do expectations using chewbacca's status code matchers, as follows:
+
+```ruby
+get "/people/1"
+expect(response_status).to be_successful
+```
+
+Other status code matchers available are:
+
+```ruby
+expect(response_status).to be_successful
+expect(response_status).to be_forbidden
+expect(response_status).to be_unauthorized
+expect(response_status).to be_server_error
+expect(response_status).to be_not_found
+expect(response_status).to be_no_content
 ```
 
 Contributing
