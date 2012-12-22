@@ -57,6 +57,8 @@ Other status code matchers available are:
 ```ruby
 expect(response_status).to be_successful
 expect(response_status).to be_forbidden
+expect(response_status).to be_bad_request
+expect(response_status).to be_created
 expect(response_status).to be_unauthorized
 expect(response_status).to be_server_error
 expect(response_status).to be_not_found
