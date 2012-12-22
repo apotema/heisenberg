@@ -1,4 +1,4 @@
-Chewbacca
+Heisenberg
 =======
 
 Acceptance test for REST apis.
@@ -8,7 +8,7 @@ Installation
 
 Simply add the gem to your project's Gemfile:
 
-    gem 'chewbacca', group: :test
+    gem 'heisenberg', group: :test
 
 and then run the bundle command:
 
@@ -17,7 +17,7 @@ and then run the bundle command:
 Usage
 -----
 
-First of all, we must set our spec to use chewbacca by setting the spec type to rest_api.
+First of all, we must set our spec to use Heisenberg by setting the spec type to rest_api.
 
 ```ruby
 require "spec_helper"
@@ -27,7 +27,7 @@ describe "My awesome REST API", type: :rest_api
 end
 ```
 
-By default, all specs under the rest_apis directory will use chewbacca, allowing you to ommit the type declaration.
+By default, all specs under the rest_apis directory will use Heisenberg, allowing you to ommit the type declaration.
 
 To send messages to your api you can call any of these methods:
 
@@ -45,7 +45,7 @@ get "/people/1"
 expect(response_body).to be_eql {person: {name: "Jet Li" }}
 ```
 
-You can get the response status code from the last request and do expectations using chewbacca's status code matchers, as follows:
+You can get the response status code from the last request and do expectations using Heisenberg's status code matchers, as follows:
 
 ```ruby
 get "/people/1"

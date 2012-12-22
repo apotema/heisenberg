@@ -1,10 +1,10 @@
 require "rack/test"
 
-require "chewbacca/hashext"
-require "chewbacca/version"
-require "chewbacca/api_integration_spec"
+require "heisenberg/hashext"
+require "heisenberg/version"
+require "heisenberg/api_integration_spec"
 
-module Chewbacca
+module Heisenberg
   if defined? RSpec
     RSpec.configure do |config|
       config.include ApiIntegrationSpec,

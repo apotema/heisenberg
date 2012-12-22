@@ -1,4 +1,4 @@
-module Chewbacca
+module Heisenberg
   module ApiIntegrationSpec
     extend ActiveSupport::Concern
 
