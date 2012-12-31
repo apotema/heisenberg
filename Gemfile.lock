@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    heisenberg (0.0.1)
+    heisenberg (0.0.2)
       rack-test (>= 0.6.2)
 
 GEM
