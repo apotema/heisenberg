@@ -11,4 +11,6 @@ Gem::Specification.new do |gem|
   gem.name          = "heisenberg"
   gem.require_paths = ["lib"]
   gem.version       = Heisenberg::VERSION
+
+  gem.add_dependency "rack-test", ">= 0.6.2"
 end
