@@ -38,7 +38,7 @@ delete "/people/1"
 put "/people/1", person: { name: "Jet Li" }
 ```
 
-To get the response body from the last request can call the response_body method, which will return the response body parsed to a HashWithIndifferentAccess. For example:
+To get the response body from the last request you can call the response_body method, which will return the response body parsed to a HashWithIndifferentAccess. For example:
 
 ```ruby
 get "/people/1"
