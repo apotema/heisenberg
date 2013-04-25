@@ -1,12 +1,13 @@
 http_statuses = {
-  successful:   200,
-  created:      201,
-  no_content:   204,
-  bad_request:  400,
-  unauthorized: 401,
-  forbidden:    403,
-  not_found:    404,
-  server_error: 500,
+  successful:    200,
+  created:       201,
+  no_content:    204,
+  bad_request:   400,
+  unauthorized:  401,
+  unprocessable: 422,
+  forbidden:     403,
+  not_found:     404,
+  server_error:  500,
 }
 
 for status, code in http_statuses
